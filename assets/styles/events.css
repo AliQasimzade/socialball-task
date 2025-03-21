@@ -1,0 +1,133 @@
+.events_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 375px;
+    margin: 0 auto;
+    border-top: 1px solid var(--bg-200);
+}
+
+.events_container .events_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 12px;
+}
+
+.card_container {
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+    max-width: 100%;
+
+}
+
+.card_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(284deg, rgba(0, 0, 0, 0.00) 4.48%, rgba(0, 0, 0, 0.50) 86.9%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%);
+}
+
+.card_container_wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px 0 20px 22px;
+}
+
+.card_container .card_main_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card_container_wrapper p {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+    color: var(--secondary-white);
+    max-width: 242px;
+    font-family: Comfortaa-Bold;
+}
+
+.card_container_wrapper span {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--secondary-white-70);
+    opacity: 0.7;
+    font-family: QuickSand-Regular;
+}
+
+.avatars_container {
+    display: flex;
+    margin-top: 16px;
+}
+
+.avatars_container button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    margin: 0 -2px;
+}
+.avatars_container button:last-child {
+    background-color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Regular;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--secondary-black-50);
+}
+
+.avatars_container button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_container .line {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: white;
+    right: 50px;
+    bottom: -35%;
+    transform: rotate(45deg);
+}
+
+.card_container a {
+    width: 75px;
+    height: 75px;
+    background: var(--primary-green-600);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    border: none;
+    outline: none;
+    padding: 0 6.1px 8.1px 0;
+}
+
+.card_container a img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}

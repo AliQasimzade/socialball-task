@@ -1,0 +1,650 @@
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+header {
+    padding: 16px 12px;
+    border-bottom: 1px solid var(--bg-200);
+}
+
+header .header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.header_wrapper figure {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+figure .user_img_container {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+figure .user_img_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+figure .user_info_container {
+    display: flex;
+    flex-direction: column;
+}
+
+figure .user_info_container span {
+    color: var(--secondary-black-50);
+    font-feature-settings: 'liga' off;
+    font-family: Comfortaa-Medium;
+    line-height: 16px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+figure .user_info_container figcaption {
+    color: var(--secondary-black-90);
+    font-feature-settings: 'liga' off;
+    font-family: Comfortaa-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+}
+
+.header_btns_container {
+    display: flex;
+    gap: 8px;
+}
+
+.header_btns_container a {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--bg-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.header_btns_container a img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+section:first-child {
+    padding: 16px 12px 0 12px;
+}
+
+.player_level_container {
+    max-width: 375px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    background-color: var(--bg-900);
+    padding: 16px;
+    overflow: hidden;
+}
+
+.player_level_container img {
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 100%;
+    height: 100%;
+}
+
+.player_level_container .player_level_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.player_level_info .level_count {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.level_count span:first-child {
+    color: var(--secondary-white);
+    font-family: Comfortaa-Medium;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: -0.56px;
+}
+
+.level_count span:last-child {
+    font-family: Comfortaa-Bold;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+    color: var(--secondary-white-50);
+}
+
+.which_level_info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.which_level_info span {
+    color: var(--secondary-black);
+    font-feature-settings: 'liga' off;
+    font-family: Comfortaa-Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.challenges_container {
+    margin-top: 8px;
+    border-radius: 24px;
+    padding: 16px;
+    background-color: var(--bg-100);
+    max-width: 375px;
+    margin: 8px auto 0 auto;
+}
+
+.challenge_done_container .wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.challenge_done_container .wrapper .wrapper_left {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.challenge_done_container .wrapper .wrapper_left .challenge_done_info_text {
+    color: var(--secondary-black-70);
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.challenge_done_container .wrapper .wrapper_left .dones_info_container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.challenge_done_container .wrapper .wrapper_left .dones_info_container>span {
+    color: var(--secondary-black-70);
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Regular;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.challenge_done_container .wrapper .wrapper_left .dones_info_container .dones_info {
+    display: flex;
+    align-items: center;
+}
+
+.challenge_done_container .wrapper .wrapper_left .dones_info_container .dones_info span {
+    color: var(--secondary-black-90);
+    font-feature-settings: 'liga' off;
+    font-family: Comfortaa-Bold;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+}
+
+.challenge_done_container .wrapper .wrapper_right button {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    user-select: none;
+}
+
+.challenge_done_container .wrapper .wrapper_right button span {
+    color: var(--secondary-black);
+    font-feature-settings: 'liga' off;
+    font-family: Comfortaa-Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+}
+
+.challenge_done_container .wrapper .wrapper_right button img {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    transition: 250ms all linear;
+}
+
+.challenge_list_container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 250ms linear;
+}
+
+.challenge_list_container.show {
+    max-height: 500px;
+}
+
+.challenge_list_container li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.challenge_list_container li img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+.challenge_list_container li p {
+    color: var(--secondary-black-90);
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Regular;
+}
+
+.challenges_container .progressbar_container {
+    position: relative;
+    width: 100%;
+    border-radius: 6px;
+    background-color: var(--bg-200);
+    height: 12px;
+    overflow: hidden;
+}
+
+.challenges_container .progressbar_container .successfull_progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    background-color: var(--primary-green-500);
+    height: 100%;
+    border-radius: 6px;
+}
+
+.events {
+    padding: 32px 12px 36px 12px;
+}
+
+.events_container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.events_container .events_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.events_container .events_info span {
+    color: var(--secondary-black);
+    font-feature-settings: 'liga' off;
+    font-family: Comfortaa-Bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+}
+
+.events_container .events_info a {
+    color: var(--primary-green-500);
+    font-family: Comfortaa-Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.events .events_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card_container {
+    border-radius: 24px;
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+    max-width: 100%;
+
+}
+
+.card_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(284deg, rgba(0, 0, 0, 0.00) 4.48%, rgba(0, 0, 0, 0.50) 86.9%),
+        linear-gradient(0deg, rgba(0, 0, 0, 0.10) 0%, rgba(0, 0, 0, 0.10) 100%);
+}
+
+.card_container_wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px 0 20px 22px;
+}
+
+.card_container .card_main_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card_container_wrapper p {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+    color: var(--secondary-white);
+    font-family: Comfortaa-Bold;
+    max-width: 242px;
+}
+
+.card_container_wrapper span {
+    color: var(--secondary-white-70);
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Regular;
+    font-size: 14px;
+    line-height: 20px;
+    opacity: 0.7;
+}
+
+.avatars_container {
+    display: flex;
+    margin-top: 16px;
+}
+
+.avatars_container button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    overflow: hidden;
+    margin: 0 -2px;
+}
+
+.avatars_container button:last-child {
+    background-color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Regular;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--secondary-black-50);
+}
+
+.avatars_container button img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_container .line {
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background: #fff;
+    right: 50px;
+    bottom: -35%;
+    transform: rotate(45deg);
+}
+
+.card_container a {
+    width: 75px;
+    height: 75px;
+    background: var(--primary-green-600);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: end;
+    justify-content: flex-end;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    border: none;
+    outline: none;
+    padding: 0 6.1px 8.1px 0;
+}
+
+.card_container a img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+.traning_scout_section {
+    padding: 16px 12px 32px 12px;
+}
+
+.traning_scout_section:last-child {
+    padding-bottom: 60px;
+}
+
+.traning_scout_section .traning_scout_wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.traning_scout_wrapper .traning_scout_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.traning_scout_head span {
+    color: var(--secondary-black);
+    font-feature-settings: 'liga' off;
+    font-family: Comfortaa-Bold;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+}
+
+.traning_scout_head a {
+    color: var(--primary-green-500);
+    font-family: Comfortaa-Bold;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+}
+
+.traning_scout_wrapper .traning_scout_container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.traning_scout_card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-bottom: 1px solid var(--bg-200);
+    padding-bottom: 16px;
+}
+
+.traning_scout_card .card_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.traning_scout_card .card_head figure {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.traning_scout_card .card_head figure .user_img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.traning_scout_card .card_head figure .user_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.traning_scout_card .card_head figure .user_info {
+    display: flex;
+    flex-direction: column;
+}
+
+.traning_scout_card .card_head figure .user_info span {
+    color: var(--secondary-black);
+    font-feature-settings: 'liga' off;
+    font-family: Comfortaa-Medium;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.36px;
+}
+
+.traning_scout_card .card_head figure .user_info figcaption {
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color: var(--secondary-black-70);
+}
+
+.traning_scout_link {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0px 0px 2px 0px rgba(27, 29, 34, 0.05), 0px 1px 2px 0px rgba(27, 29, 34, 0.02), 0px 2px 4px 0px rgba(27, 29, 34, 0.04), 0px 3px 4px 0px rgba(27, 29, 34, 0.02);
+}
+
+.traning_scout_link img {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+
+.traning_scout_container .card_body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.traning_scout_container .card_body .exercise-title {
+    color: var(--secondary-black-90);
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-SemiBold;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.traning_scout_container .card_body .tags {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.traning_scout_container .card_body .tags .tag {
+    border-radius: 11px;
+    border: 1px solid var(--bg-200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 8px;
+    color: var(--secondary-black);
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Regular;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.navbar_container {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 8px 12px 24px 12px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(186, 186, 186, 0.00), 0px 0px 9px 0px rgba(186, 186, 186, 0.01), 0px 0px 8px 0px rgba(186, 186, 186, 0.05), 0px 0px 6px 0px rgba(186, 186, 186, 0.09), 0px 0px 3px 0px rgba(186, 186, 186, 0.10);
+}
+
+.navbar_container nav {
+    max-width: 375px;
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+.navbar_container nav .active_link {
+    border-radius: 14px;
+    background-color: var(--primary-green-500);
+}
+
+.navbar_container nav a {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    padding: 0 10.3px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar_container nav a img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/fonts.css" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/variables.css" />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+    <link rel="stylesheet" href="./assets/styles/message-write.css" />
+    <title>Message Write</title>
+</head>
+
+<body>
+    <div class="chatbox_container">
+        <div class="chatbox_container_wrapper">
+            <div class="chat_head">
+                <div class="wrapper max-width-375">
+                    <button class="back_to">
+                        <img src="./assets/images/left_arrow.svg" alt="left arrow" />
+                    </button>
+                    <figure>
+                        <div class="user_img">
+                            <img src='./assets/images/user.jpg' alt="user" loading="lazy" />
+                        </div>
+                        <figcaption>
+                            <span>Javid Manafov</span>
+                            <span class="online_status">Online</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+
+            <div class="messages_boxes_container">
+                <div id="messages_content" class="wrapper max-width-375">
+                    <div class="message_box">
+                        <div class="message">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco
+                                laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        </div>
+                        <span class="message_date">18:36</span>
+                    </div>
+
+                    <div class="message_box">
+                        <div class="message your_message">
+                            <p>Lorem ipsum dolor sit amet,
+                                consectetur adipiscing elit, </p>
+                        </div>
+                        <span class="message_time text-right">18:36</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="type_message_box">
+            <div class="wrapper max-width-375">
+                <input type="text" id="message_text" placeholder="Type message...." />
+                <button class="send_btn">
+                    <img src="./assets/images/send.svg" alt="send" />
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/message-write.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

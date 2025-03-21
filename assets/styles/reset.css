@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    background: transparent;
+    border: none;
+}
+
+button,
+input,
+textarea {
+    outline: none;
+}
+
+html,
+body {
+    font-weight: 400;
+    font-family: Comfortaa-Regular, sans-serif;
+    background-color: var(--secondary-white);
+}

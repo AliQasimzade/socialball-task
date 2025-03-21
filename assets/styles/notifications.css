@@ -1,0 +1,141 @@
+.notifications_container .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.notifications .wrapper {
+    padding: 4px 12px 0 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.notification_box {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--bg-200);
+}
+
+.notification_box:not(:first-child) {
+    padding: 16px 0;
+}
+
+.notification_box:first-child {
+    padding-bottom: 16px;
+}
+
+.notification_box figure {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.notification_box figure .user_img {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.notification_box figure .user_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.notification_box figure .notification_info_time {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.notification_info_time .notification_info {
+    display: flex;
+}
+
+.notification_info_time .notification_info figcaption {
+    max-width: 100%;
+}
+
+.notification_info_time .notification_info figcaption .user_fullname {
+    color: var(--secondary-black-90);
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Regular;
+}
+
+.notification_info_time .notification_info figcaption span:last-child {
+    color: var(--secondary-black-50);
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Light;
+    font-weight: 300;
+}
+
+.notification_info_time .notification_info figcaption span:last-child strong {
+    font-family: Quicksand-Regular;
+    color: var(--secondary-black-90);
+    font-weight: 400;
+}
+
+.notification_time {
+    color: var(--secondary-black-50);
+    font-feature-settings: 'salt' on;
+    font-family: Quicksand-Regular;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.notification_type {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.notification_type.message {
+    background-color: var(--warning-500);
+}
+
+.notification_type.heart {
+    background-color: var(--error-500);
+}
+
+.notification_type.profile {
+    background-color: var(--success-500);
+}
+
+.notification_type.people {
+    background-color: var(--bg-900);
+}
+
+.notification_btns {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.notification_btns button {
+    font-family: Comfortaa-Medium;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    border-radius: 12px;
+    padding: 8px 16px;
+    box-shadow: 0px 0px 2px 0px rgba(27, 29, 34, 0.05), 0px 1px 2px 0px rgba(27, 29, 34, 0.02), 0px 2px 4px 0px rgba(27, 29, 34, 0.04), 0px 3px 4px 0px rgba(27, 29, 34, 0.02);
+}
+
+.notification_btns button:first-child {
+    background-color: var(--primary-green-500);
+    border: 1px solid var(--primary-green-500);
+    color: var(--secondary-white);
+}
+
+.notification_btns button:last-child {
+    background-color: var(--bg-100);
+    border: 1px solid var(--bg-100); 
+    color: var(--secondary-black-70);
+}

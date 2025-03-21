@@ -1,11 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/fonts.css" />
+    <link rel="stylesheet" href="./assets/styles/reset.css" />
+    <link rel="stylesheet" href="./assets/styles/variables.css" />
+    <link rel="stylesheet" href="./assets/styles/home.css" />
     <title>Home</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="header_wrapper">
+            <figure>
+                <div class="user_img_container">
+                    <img src="./assets/images/user.jpg" alt="user" loading="lazy" />
+                </div>
+                <div class="user_info_container">
+                    <span>Welcome</span>
+                    <figcaption>Javid Manafov</figcaption>
+                </div>
+            </figure>
+            <div class="header_btns_container">
+                <a href="notifications.html" class="notification_btn">
+                    <img src="./assets/images/notification-bing.svg" alt="notification" />
+                </a>
+                <a href="message.html" class="direct_btn">
+                    <img src="./assets/images/direct.svg" alt="direct" />
+                </a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="player_level_container">
+                <img src="./assets/images/shape.svg" alt="shape" />
+                <div class="player_level_info">
+                    <div class="level_count">
+                        <span>50</span>
+                        <span>Level</span>
+                    </div>
+
+                    <div class="which_level_info">
+                        <span>Master Player</span>
+                    </div>
+                </div>
+            </div>
+            <div class="challenges_container">
+                <div class="wrapper">
+                    <div class="challenge_done_container">
+                        <div class="wrapper">
+                            <div class="wrapper_left">
+                                <span class="challenge_done_info_text">Challenge to be done</span>
+                                <div class="dones_info_container">
+                                    <div class="dones_info">
+                                        <span class="which_done_count">6</span>
+                                        <span>/</span>
+                                        <span class="total_done_count">10</span>
+                                    </div>
+                                    <span>Challenge done</span>
+                                </div>
+                            </div>
+                            <div class="wrapper_right">
+                                <button class="view_challenge_btn">
+                                    <span>View challenge</span>
+                                    <img src="./assets/images/down.svg" alt="down" />
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="progressbar_container">
+                    <div class="successfull_progress"></div>
+                </div>
+
+                <ul class="challenge_list_container">
+                    <li>
+                        <img src="./assets/images/check_circle.svg" alt="check circle" />
+                        <p>Lorem ipsum dolor amet, consectetur adipiscing elit</p>
+                    </li>
+                    <li>
+                        <img src="./assets/images/check_circle.svg" alt="check circle" />
+                        <p>Lorem ipsum dolor amet, consectetur adipiscing elit</p>
+                    </li>
+                    <li>
+                        <img src="./assets/images/check_circle.svg" alt="check circle" />
+                        <p>Lorem ipsum dolor amet, consectetur adipiscing elit</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="events">
+            <div class="events_container">
+                <div class="events_info">
+                    <span>Events</span>
+                    <a href="events.html">
+                        View All (12)
+                    </a>
+                </div>
+                <div class="events_wrapper">
+                    <div class="card_container">
+                        <img src="./assets/images/footballer.jpg" alt="footballer" loading="lazy" class="card_main_img">
+                        <div class="card_overlay"></div>
+                        <div class="card_container_wrapper">
+                            <span>15.11.2024</span>
+                            <p>Youth league competition</p>
+                            <div class="avatars_container">
+                                <button>
+                                    <img src="./assets/images/avatar.jpg" alt="avatar" loading="lazy" />
+                                </button>
+                                <button>
+                                    <img src="./assets/images/avatar.jpg" alt="avatar" loading="lazy" />
+                                </button>
+                                <button>
+                                    <img src="./assets/images/avatar.jpg" alt="avatar" loading="lazy" />
+                                </button>
+                                <button>
+                                    1k
+                                </button>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <a href="event_detail.html">
+                            <img src="./assets/images/up.svg" alt="up arrow" />
+                        </a>
+                    </div>
+                    <div class="card_container">
+                        <img src="./assets/images/footballer.jpg" alt="footballer" loading="lazy" class="card_main_img">
+                        <div class="card_overlay"></div>
+                        <div class="card_container_wrapper">
+                            <span>15.11.2024</span>
+                            <p>Youth league competition</p>
+                            <div class="avatars_container">
+                                <button>
+                                    <img src="./assets/images/avatar.jpg" alt="avatar" loading="lazy" />
+                                </button>
+                                <button>
+                                    <img src="./assets/images/avatar.jpg" alt="avatar" loading="lazy" />
+                                </button>
+                                <button>
+                                    <img src="./assets/images/avatar.jpg" alt="avatar" loading="lazy" />
+                                </button>
+                                <button>
+                                    1k
+                                </button>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <a href="event_detail.html">
+                            <img src="./assets/images/up.svg" alt="up arrow" />
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="traning_scout_section">
+            <div class="traning_scout_wrapper">
+                <div class="traning_scout_head">
+                    <span>Traning</span>
+                    <a href="tranings.html">View More</a>
+                </div>
+
+                <div class="traning_scout_container">
+                    <div class="traning_scout_card">
+                        <div class="card_head">
+                            <figure>
+                                <div class="user_img">
+                                    <img src="./assets/images/avatar.jpg" alt="user" loading="lazy" />
+                                </div>
+                                <div class="user_info">
+                                    <span>Tom Cruise</span>
+                                    <figcaption>
+                                        Coach
+                                    </figcaption>
+                                </div>
+                            </figure>
+                            <a href="traning_detail.html" class="traning_scout_link">
+                                <img src="./assets/images/up_black.svg" alt="up" />
+                            </a>
+                        </div>
+
+                        <div class="card_body">
+                            <span class="exercise-title">Exercise program for the little ones</span>
+                            <div class="tags">
+                                <div class="tag">12+ years old</div>
+                                <div class="tag">Lorem</div>
+                                <div class="tag">Lorem</div>
+                                <div class="tag">Lorem impsum</div>
+                                <div class="tag">Lorem impsum</div>
+                                <div class="tag">+2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="traning_scout_card">
+                        <div class="card_head">
+                            <figure>
+                                <div class="user_img">
+                                    <img src="./assets/images/avatar.jpg" alt="user" loading="lazy" />
+                                </div>
+                                <div class="user_info">
+                                    <span>Tom Cruise</span>
+                                    <figcaption>
+                                        Coach
+                                    </figcaption>
+                                </div>
+                            </figure>
+                            <a href="traning_detail.html" class="traning_scout_link">
+                                <img src="./assets/images/up_black.svg" alt="up" />
+                            </a>
+                        </div>
+
+                        <div class="card_body">
+                            <span class="exercise-title">Exercise program for the little ones</span>
+                            <div class="tags">
+                                <div class="tag">12+ years old</div>
+                                <div class="tag">Lorem</div>
+                                <div class="tag">Lorem</div>
+                                <div class="tag">Lorem impsum</div>
+                                <div class="tag">Lorem impsum</div>
+                                <div class="tag">+2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="traning_scout_section">
+            <div class="traning_scout_wrapper">
+                <div class="traning_scout_head">
+                    <span>Scout offers</span>
+                    <a href="tranings.html">View All</a>
+                </div>
+
+                <div class="traning_scout_container">
+                    <div class="traning_scout_card">
+                        <div class="card_head">
+                            <figure>
+                                <div class="user_img">
+                                    <img src="./assets/images/avatar.jpg" alt="user" loading="lazy" />
+                                </div>
+                                <div class="user_info">
+                                    <span>Tom Cruise</span>
+                                    <figcaption>
+                                        Coach
+                                    </figcaption>
+                                </div>
+                            </figure>
+                            <a href="traning_detail.html" class="traning_scout_link">
+                                <img src="./assets/images/up_black.svg" alt="up" />
+                            </a>
+                        </div>
+
+                        <div class="card_body">
+                            <span class="exercise-title">There is acceptance to the Star team</span>
+                            <div class="tags">
+                                <div class="tag">12+ years old</div>
+                                <div class="tag">Lorem</div>
+                                <div class="tag">Lorem</div>
+                                <div class="tag">Lorem impsum</div>
+                                <div class="tag">Lorem impsum</div>
+                                <div class="tag">+2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="traning_scout_card">
+                        <div class="card_head">
+                            <figure>
+                                <div class="user_img">
+                                    <img src="./assets/images/avatar.jpg" alt="user" loading="lazy" />
+                                </div>
+                                <div class="user_info">
+                                    <span>Tom Cruise</span>
+                                    <figcaption>
+                                        Coach
+                                    </figcaption>
+                                </div>
+                            </figure>
+                            <a href="traning_detail.html" class="traning_scout_link">
+                                <img src="./assets/images/up_black.svg" alt="up" />
+                            </a>
+                        </div>
+
+                        <div class="card_body">
+                            <span class="exercise-title">There is acceptance to the Star team</span>
+                            <div class="tags">
+                                <div class="tag">12+ years old</div>
+                                <div class="tag">Lorem</div>
+                                <div class="tag">Lorem</div>
+                                <div class="tag">Lorem impsum</div>
+                                <div class="tag">Lorem impsum</div>
+                                <div class="tag">+2</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="navbar_container">
+        <nav>
+            <a href="#" class="active_link">
+                <img src="./assets/images/home.svg" alt="home" />
+            </a>
+            <a href="#">
+                <img src="./assets/images/chart.svg" alt="chart" />
+            </a>
+            <a href="#">
+                <img src="./assets/images/video-square.svg" alt="video-square" />
+            </a>
+            <a href="#">
+                <img src="./assets/images/search.svg" alt="search" />
+            </a>
+            <a href="#">
+                <img src="./assets/images/user.svg" alt="user" />
+            </a>
+        </nav>
+    </div>
+    <script src="./assets/js/home.js"></script>
 </body>
+
 </html>

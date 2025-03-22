@@ -17,7 +17,7 @@ img {
     max-width: 100%;
 }
 
-button {
+button, a {
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     background: transparent;

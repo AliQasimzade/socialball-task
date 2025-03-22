@@ -95,7 +95,7 @@ const renderMessages = () => {
                            </figure>
    
                            <div class="last_message_date_info">
-                               <span class="last_message_time ${typeof data?.hour_or_count != "number" && 'hour'}">${data?.last_date?.toLocaleDateString('en-GB', {
+                               <span class="last_message_date ${typeof data?.hour_or_count != "number" && 'hour'}">${data?.last_date?.toLocaleDateString('en-GB', {
             day: "numeric",
             month: "short",
         })}</span>

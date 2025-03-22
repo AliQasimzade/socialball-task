@@ -80,7 +80,7 @@
 }
 
 .searchbox .seachbox_wrapper input {
-    color: var(--secondary-black-40);
+    color: var(--secondary-black-90);
     position: absolute;
     top: 0;
     left: 0;
@@ -93,6 +93,10 @@
     font-family: Quicksand-Regular;
     font-size: 14px;
     line-height: 20px;
+}
+
+.searchbox .seachbox_wrapper input::placeholder {
+    color: var(--secondary-black-40);
 }
 
 .searchbox .seachbox_wrapper button {

@@ -149,6 +149,10 @@
     outline: none;
     border: none;
     flex-grow: 1;
+    color: var(--secondary-black-90);
+}
+
+.type_message_box .wrapper input::placeholder {
     color: var(--secondary-black-20);
 }
 
